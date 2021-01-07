@@ -20,8 +20,8 @@ grid_map[15] = new Array(20).fill(1);
 
 //display screen properties
 let vscreen = {
-    x: 484,
-    y: 704,
+    x: 660,
+    y: 880,
     drawlines() {
         for (x = 44; x < this.x; x += 44)
             line(x, 0, x, this.y);
