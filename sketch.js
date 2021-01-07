@@ -1,4 +1,5 @@
 //custom setup 2
+console.log("working");
 let canvas
 let loop;
 let score = 0;
