@@ -41,7 +41,7 @@
     if(isset($_POST['highscore'])){
         $conn = new mysqli('localhost','admin','password','falling_bricks');
         $highscore = $_POST['highscore'];
-        $conn -> query("delete from highscore where highscore>0");
+        $conn -> query("delete from highscore where highscore>=0");
         $conn -> query("insert into highscore values($highscore)");
         $conn->close();
     }
